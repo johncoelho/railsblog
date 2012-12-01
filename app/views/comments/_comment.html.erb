@@ -1,0 +1,16 @@
+<p>
+  <b>Autor:</b>
+  <%= comment.commenter %>
+</p>
+ 
+<p>
+  <b>Comentario:</b>
+  <%= comment.body %>
+</p>
+
+<p>
+  <%= link_to 'Excluir Comentario', [comment.post, comment],
+               :confirm => 'Tem certeza maluco?',
+               :method => :delete %>
+</p>
+
